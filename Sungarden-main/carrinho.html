@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/carrinho.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><a href="index.html">
+          <img src="src/imagens/logo 3.png" alt="Logo SunGarden" /></a>
+          <img src="src/imagens/SUN GARDEN.png" alt="" />
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar" />
+          <button>
+            <img
+              src="src/imagens/imagem_2024-10-08_145744956 (1) 1.png"
+              alt="Pesquisar"
+            />
+          </button>
+        </div>
+        <div class="actions">
+          <img
+            src="src/imagens/imagem_2024-10-08_142858621 2.png"
+            alt="Carrinho"
+            class="icon"
+          />
+          <button
+            class="btn register"
+            onclick="window.location.href='login.html';"
+          >
+            Registrar
+          </button>
+          <button
+            class="btn login"
+            onclick="window.location.href='login.html';"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Cestas e Kits</a></li>
+          <li><a href="#">Arranjos</a></li>
+          <li><a href="#">Fragrâncias</a></li>
+          <li><a href="#">Buquês</a></li>
+          <li><a href="#">Datas Especiais</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="containerBuceta">
+    <main>
+      <section class="CotainerCarrinho">
+        <h1 id="titulo">Carrinho de Compras</h1>
+        <div class="produto2">
+          <div class="produtoCar">
+            <img
+              src="src/imagens/buque1.png"
+              alt="buque1"
+              width="100 px"
+              height="100px"
+            />
+          </div>
+          <div class="descricao">
+            <p class="nomeP" id="florOne">R$159,90 • Buquê 25 flores de tres cores</p>
+            <button class="custom-button">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/trash.png"
+                alt="Lixeira"
+                onclick="decrement()"
+              />
+              <span id="counter"></span>
+              <span class="plus" onclick="increment()">+</span>
+            </button>
+          </div>
+        </div>
+        <div class="produto2">
+          <div class="produtoCar">
+            <img
+              src="src/imagens/buque3.png"
+              alt="buque1"
+              width="100 px"
+              height="100px"
+            />
+          </div>
+          <div class="descricao">
+            <p class="nomeP" id="florTwo">R$159,90 • Buquê 25 flores de tres cores</p>
+            <button class="custom-button">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/trash.png"
+                alt="Lixeira"
+                onclick="decrement2()"
+              />
+              <span id="counter2">1</span>
+              <span class="plus" onclick="increment2()">+</span>
+            </button>
+          </div>
+        </div>
+        <div class="produto2">
+          <div class="produtoCar">
+            <img
+              src="src/imagens/buque4.png"
+              alt="buque1"
+              width="100 px"
+              height="100px"
+            />
+          </div>
+          <div class="descricao">
+            <p class="nomeP" id="florThree">R$159,90 • Buquê 25 flores de tres cores</p>
+            <button class="custom-button">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/trash.png"
+                alt="Lixeira"
+                onclick="decrement3()"
+              />
+              <span id="counter3">1</span>
+              <span class="plus" onclick="increment3()">+</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <h3>Resumo do Pedido</h3>
+      <p class="subtotal">Subtotal: <strong id="totalnumero" ></strong></p>
+      <a href="index.html" class="btn-finalizar">Fechar Pedido</a>
+    </aside>
+  </div>
+  <p id="teste12">aaaaaaa</p>
+    <script src="src/scripts/scriptC.js">
+   
+    
+
+    </script>
+  </body>
+</html>

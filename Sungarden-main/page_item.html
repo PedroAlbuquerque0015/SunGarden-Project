@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/page_item.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <script type="module"  src="src/scripts/Page_itemScript.js">  </script>
+  <header>
+      <div class="container">
+        <div class="logo"><a href="index.html">
+          <img src="src/imagens/logo 3.png" alt="Logo SunGarden"></a>
+          <img src="src/imagens/SUN GARDEN.png" alt="">
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar">
+          <button><img src="src/imagens/imagem_2024-10-08_145744956 (1) 1.png" alt="Pesquisar"></button>
+        </div>
+        <div class="actions">
+          <a href="carrinho.html">
+            <img
+              src="src/imagens/imagem_2024-10-08_142858621 2.png"
+              alt="Carrinho"
+              class="icon"
+            />
+          </a>
+          <button
+            class="btn register"
+            onclick="window.location.href='login.html';"
+          >
+            Registrar
+          </button>
+          <button
+            class="btn login"
+            onclick="window.location.href='login.html';"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Cestas e Kits</a></li>
+          <li><a href="#">Arranjos</a></li>
+          <li><a href="#">Fragrâncias</a></li>
+          <li><a href="#">Buquês</a></li>
+          <li><a href="#">Datas Especiais</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+      <img src="" id="imagem">
+      <img src="src/imagens/gps image.png" id="gps">
+      <p class="info">Calcule o frete</p>
+      <button class="calc">Calcular</button>
+      <input class="cep" type="text" placeholder="Digite o CEP">
+      <div class="bar"></div>
+      <h1 id="nome_flor"> </h1>
+      <p class="status">Em Estoque</p>
+      <p id="descrição"> </p>
+      <div class="square"></div>
+      <div class="square2"></div>
+      <h2 id="preco"> </h2>
+      <button class="compra"> Compre Agora</button>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+  </main>
+  
+  <footer>
+
+    <div class="logoFooter"><img src="src/imagens/logo 3.png" alt=""></div>
+    <div class="links">
+      <a href="">Como Funciona</a>
+      <a href="">Minha Conta</a>
+      <a href="">Ajuda</a>
+      <a href="">Contato</a>
+      <a href="">Política de Privacidade</a>
+      <a href="">Política de Cookies</a>
+    </div>
+    <p>SunGarden flores ltda | CNPJ: 42.591.651/0001-43</p>
+    <p>Av. Agamenon Magalhães - 560 - Graças - Recife - PE- 51310-560</p>
+    <p>Saiba mais sobre seu pedido pelo Whatsapp: (81) 9655-0097</p>
+    <p>Faça seu Pedido  pelo Whatsapp: (81) 9655-0097</p>
+
+  </footer>
+
+</body>
+</html>

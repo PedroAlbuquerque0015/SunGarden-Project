@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunGarden</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="src/imagens/logo 3.png" alt="Logo SunGarden" />
+          <img src="src/imagens/SUN GARDEN.png" alt="" />
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar" />
+          <button>
+            <img
+              src="src/imagens/imagem_2024-10-08_145744956 (1) 1.png"
+              alt="Pesquisar"
+            />
+          </button>
+        </div>
+        <div class="actions">
+          <a href="carrinho.html">
+            <img
+              src="src/imagens/imagem_2024-10-08_142858621 2.png"
+              alt="Carrinho"
+              class="icon"
+            />
+          </a>
+
+          <button
+            class="btn register"
+            onclick="window.location.href='login.html';"
+          >
+            Registrar
+          </button>
+          <button
+            class="btn login"
+            onclick="window.location.href='login.html';"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Cestas e Kits</a></li>
+          <li><a href="#">Arranjos</a></li>
+          <li><a href="#">Fragrâncias</a></li>
+          <li><a href="#">Buquês</a></li>
+          <li><a href="#">Datas Especiais</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="carrossel">
+        <div class="slides">
+          <input type="radio" id="radio1" />
+          <input type="radio" id="radio2" />
+          <input type="radio" id="radio3" />
+          <input type="radio" id="radio4" />
+
+          <div class="slide first">
+            <img src="src/imagens/slide1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/imagens/slide2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/imagens/slide3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/imagens/slide4.png" alt="" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+
+      <section class="Container-product">
+        <h4>Buquê de Flores</h4>
+        <hr class="linha">
+        <div class="Prod">
+          <div class="product" id="1" onclick="fetchJSONData(this.id)">
+            <img src="src/imagens/1.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="2" onclick="fetchJSONData(this.id)">
+            <img src="src/imagens/2.png" alt="" />
+            <p>R$1,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="3">
+            <img src="src/imagens/Buque3.png" alt="" />
+            <p>R$149,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="4">
+            <img src="src/imagens/Buque4.png" alt="" />
+            <p>R$139,90 • Buquê 25 flores de tres cores</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Container-product">
+        <h4>Arranjos de Flores</h4>
+        <hr class="linha">
+        <div class="Prod">
+          <div class="product" id="5">
+            <img src="src/imagens/arranjo1.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="6">
+            <img src="src/imagens/arranjo2.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="7">
+            <img src="src/imagens/arranjo3.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="8">
+            <img src="src/imagens/arranjo4.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+        </div>
+      </section>
+      <section class="Container-product">
+        <h4>Cestas e Kits</h4>
+        <hr class="linha">
+        <div class="Prod">
+          <div class="product" id="9">
+            <img src="src/imagens/cesta1.png" alt="" />
+            <p>R$159,90 • Buquê 25 flores de tres cores</p>
+          </div>
+          <div class="product" id="10">
+            <img src="src/imagens/cesta2.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="11">
+            <img src="src/imagens/cesta3.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="12">
+            <img src="src/imagens/cesta4.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+        </div>
+      </section>
+      <section class="Container-product">
+        <h4>Fragrâncias</h4>
+        <hr class="linha">
+        <div class="Prod">
+          <div class="product" id="13">
+            <img src="src/imagens/p1.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="14">
+            <img src="src/imagens/p2.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="15">
+            <img src="src/imagens/p3.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="16">
+            <img src="src/imagens/p4.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+        </div>
+      </section>
+      <section class="Container-product">
+        <h4>Datas Especiais</h4>
+        <hr class="linha">
+        <div class="Prod">
+          <div class="product" id="17">
+            <img src="src/imagens/festa1.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="18">
+            <img src="src/imagens/festa2.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="19">
+            <img src="src/imagens/festa3.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+          <div class="product" id="20">
+            <img src="src/imagens/festa4.png" alt="" />
+            <p>Cesta com Rosas e Margaridas Amarelas e Brancas</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logoFooter"><img src="src/imagens/logo 3.png" alt="" /></div>
+      <div class="links">
+        <a href="">Como Funciona</a>
+        <a href="">Minha Conta</a>
+        <a href="">Ajuda</a>
+        <a href="">Contato</a>
+        <a href="">Política de Privacidade</a>
+        <a href="">Política de Cookies</a>
+      </div>
+      <p>SunGarden flores ltda | CNPJ: 42.591.651/0001-43</p>
+      <p>Av. Agamenon Magalhães - 560 - Graças - Recife - PE- 51310-560</p>
+      <p>Saiba mais sobre seu pedido pelo Whatsapp: (81) 9655-0097</p>
+      <p>Faça seu Pedido pelo Whatsapp: (81) 9655-0097</p>
+    </footer>
+
+    <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/Page_itemScript.js"></script>
+  </body>
+</html>

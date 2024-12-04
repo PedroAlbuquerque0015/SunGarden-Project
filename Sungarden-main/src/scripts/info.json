@@ -1,0 +1,16 @@
+{
+  "flores": [
+    {
+      "id": "1",
+      "nome": "Buquê",
+      "descricao": "Buquê com 25 flores de três cores.",
+      "preco": "R$ 159,90"
+    },
+    {
+      "id": "2",
+      "nome": "Buquê 2",
+      "descricao": "Buquê com 25 flores de três cores.",
+      "preco": "R$ 1,90"
+    }
+  ]
+}
